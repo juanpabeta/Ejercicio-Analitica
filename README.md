@@ -1,11 +1,11 @@
 # Ejerecicio Practico Senior Backend Developer
 
-Un microservicio que analiza los clientes, ventas y categorías para una compañia de electronica, esta construido con **FastAPI** y **PostgreSQL**. Utiliza window functions, CTEs y subconsultas para obtener métricas de clientes, categorías y productos.
+Una api que analiza los clientes, ventas y categorías para una compañia de electronica, esta construido con **FastAPI** y **PostgreSQL**. Utiliza window functions, CTEs y subconsultas para obtener métricas de clientes, categorías y productos.
 
 ## Características
 
-- API asíncrona con FastAPI y `psycopg` (PostgreSQL async)
-- Consultas analíticas sobre un modelo relacional de e-commerce
+- API con FastAPI y `psycopg` (PostgreSQL async)
+- Consultas analíticas
 - Validación de respuestas con Pydantic
 - Configuración de base de datos mediante variables de entorno
 
@@ -35,17 +35,15 @@ ejercicio_analitica/
    DB_PASSWORD=tu_contraseña
   ```
 
-
-
 ## Ejecución
 
 Desde la carpeta `ejercicio_analitica/`:
 
-```bash
+```cmd
 uvicorn main:app --reload
 ```
 
-La API estará disponible en `http://127.0.0.1:8000`.
+La API estará disponible en el puerto: `http://127.0.0.1:8000`.
 
 Documentación interactiva:
 
